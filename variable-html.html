@@ -13,6 +13,7 @@
         }
         h1 {
             color: #007BFF;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Ombre pour le titre */
         }
         ul {
             list-style-type: none;
@@ -21,15 +22,18 @@
         li {
             background-color: #fff;
             margin: 10px 0;
-            padding: 10px;
+            padding: 15px;
             border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Fond d'ombre pour les éléments de liste */
+            transition: transform 0.2s, box-shadow 0.2s; /* Animation au survol */
         }
-        .attribut {
-            background-color: yellow;
+        li:hover {
+            transform: translateY(-2px); /* Effet de levée au survol */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Ombre plus prononcée au survol */
+        }
+        .attribut, .element {
+            color: #FFD700; /* Jaune pour les attributs et éléments */
             font-weight: bold;
-            padding: 2px 5px;
-            border-radius: 3px;
         }
     </style>
 </head>
@@ -59,31 +63,31 @@
         <li><span class="attribut">autofocus</span> : Focalise automatiquement un élément lorsque la page est chargée.</li>
 
         <!-- Éléments -->
-        <li><strong>div</strong> : Conteneur générique pour regrouper des éléments.</li>
-        <li><strong>span</strong> : Conteneur en ligne pour regrouper du texte ou des éléments.</li>
-        <li><strong>p</strong> : Définit un paragraphe.</li>
-        <li><strong>a</strong> : Crée un lien hypertexte.</li>
-        <li><strong>img</strong> : Affiche une image.</li>
-        <li><strong>ul</strong> : Crée une liste non ordonnée.</li>
-        <li><strong>li</strong> : Élément d'une liste (utilisé avec ul ou ol).</li>
-        <li><strong>ol</strong> : Crée une liste ordonnée.</li>
-        <li><strong>table</strong> : Crée un tableau.</li>
-        <li><strong>tr</strong> : Définit une ligne dans un tableau.</li>
-        <li><strong>td</strong> : Définit une cellule de données dans un tableau.</li>
-        <li><strong>th</strong> : Définit une cellule d'en-tête dans un tableau.</li>
-        <li><strong>form</strong> : Crée un formulaire.</li>
-        <li><strong>input</strong> : Crée un champ de saisie.</li>
-        <li><strong>button</strong> : Crée un bouton.</li>
-        <li><strong>textarea</strong> : Crée une zone de texte multiligne.</li>
-        <li><strong>select</strong> : Crée une liste déroulante.</li>
-        <li><strong>option</strong> : Définit une option dans une liste déroulante.</li>
-        <li><strong>header</strong> : Définit l'en-tête d'une section ou d'une page.</li>
-        <li><strong>footer</strong> : Définit le pied de page d'une section ou d'une page.</li>
-        <li><strong>section</strong> : Définit une section dans un document.</li>
-        <li><strong>article</strong> : Définit un contenu indépendant, comme un article de blog.</li>
-        <li><strong>nav</strong> : Définit une section de navigation.</li>
-        <li><strong>main</strong> : Définit le contenu principal d'un document.</li>
-        <li><strong>aside</strong> : Définit un contenu secondaire ou une barre latérale.</li>
+        <li><span class="element">div</span> : Conteneur générique pour regrouper des éléments.</li>
+        <li><span class="element">span</span> : Conteneur en ligne pour regrouper du texte ou des éléments.</li>
+        <li><span class="element">p</span> : Définit un paragraphe.</li>
+        <li><span class="element">a</span> : Crée un lien hypertexte.</li>
+        <li><span class="element">img</span> : Affiche une image.</li>
+        <li><span class="element">ul</span> : Crée une liste non ordonnée.</li>
+        <li><span class="element">li</span> : Élément d'une liste (utilisé avec ul ou ol).</li>
+        <li><span class="element">ol</span> : Crée une liste ordonnée.</li>
+        <li><span class="element">table</span> : Crée un tableau.</li>
+        <li><span class="element">tr</span> : Définit une ligne dans un tableau.</li>
+        <li><span class="element">td</span> : Définit une cellule de données dans un tableau.</li>
+        <li><span class="element">th</span> : Définit une cellule d'en-tête dans un tableau.</li>
+        <li><span class="element">form</span> : Crée un formulaire.</li>
+        <li><span class="element">input</span> : Crée un champ de saisie.</li>
+        <li><span class="element">button</span> : Crée un bouton.</li>
+        <li><span class="element">textarea</span> : Crée une zone de texte multiligne.</li>
+        <li><span class="element">select</span> : Crée une liste déroulante.</li>
+        <li><span class="element">option</span> : Définit une option dans une liste déroulante.</li>
+        <li><span class="element">header</span> : Définit l'en-tête d'une section ou d'une page.</li>
+        <li><span class="element">footer</span> : Définit le pied de page d'une section ou d'une page.</li>
+        <li><span class="element">section</span> : Définit une section dans un document.</li>
+        <li><span class="element">article</span> : Définit un contenu indépendant, comme un article de blog.</li>
+        <li><span class="element">nav</span> : Définit une section de navigation.</li>
+        <li><span class="element">main</span> : Définit le contenu principal d'un document.</li>
+        <li><span class="element">aside</span> : Définit un contenu secondaire ou une barre latérale.</li>
     </ul>
 </body>
 </html>
